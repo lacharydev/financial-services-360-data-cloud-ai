@@ -1,12 +1,12 @@
 # Financial Services 360 — Churn Analytics with Salesforce Data Cloud & Einstein Discovery
 
-**Purpose**  
+## Purpose
 Enablement-style demo showing how to model customer churn using **Salesforce Data Cloud (DMOs + Calculated Insights)**, explain predictions with **Einstein Discovery**, and tell the story in **CRM Analytics (Tableau CRM)**. Data is fully **synthetic**.
 
 ---
 
 ## Architecture
-```mermaid
+```
 flowchart LR
   A[Data Sources (CSV)] --> B[Data Cloud DLOs]
   B --> C[DMOs: Customer, Account, Transaction]
@@ -74,19 +74,14 @@ CSV outputs land in `/data`.
 - Build an exec dashboard per `crm_analytics/dashboard_spec.md`
 - Add screenshots to `crm_analytics/screenshots/`
 
-### 6) Tell the Story
+### 6) Summary
 > *High-fee, low-tenure, low-balance customers are 2.3× more likely to churn. Prioritize fee reversal outreach and savings cross-sell for retention.*
 
 ---
 
-## Responsible Use
-- Synthetic data only. No PII.  
-- Intended for enablement and education. Reuse patterns freely under MIT License.
-
 
 ---
 
-## Optional Integrations (per JD)
 
 ### Databricks (PySpark)
 See `/databricks/` for a PySpark notebook that computes the same features at scale in **Databricks Community Edition**.
