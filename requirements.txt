@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+jupyter
+pyarrow
+simple-salesforce
+# optional: uncomment if you will connect Snowflake locally
+# snowflake-connector-python
+
+# optional for PySpark (Databricks handled on platform)
+# pyspark
