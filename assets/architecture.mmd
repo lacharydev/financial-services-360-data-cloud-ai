@@ -1,1 +1,9 @@
-
+```mermaid
+flowchart LR
+  A[Data Sources (CSV)] --> B[Data Cloud DLOs]
+  B --> C[DMOs: Customer, Account, Transaction]
+  C --> D[Calculated Insights (features per customer)]
+  D --> E[Einstein Discovery Model (churn + drivers)]
+  E --> F[CRM Analytics Dashboard (FS 360)]
+  F --> G[Action Plan (Next-Best Action)]
+```
